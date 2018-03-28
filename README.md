@@ -1,6 +1,6 @@
 # mariadb-install-import
 
-- [X] 运行`sudo bash mariadb.sh`；
+- [X] 运行`sudo bash mariadb.sh`，如果之前有安装mysql相关的需要全部卸载；
 - [X] 更新mariadb的源为中国区域，ubunut系统版本自动检测切换；
 - [X] 支持选择数据版本`MARIADB_VERSION`；
 - [X] 设置root密码`MYSQL_ROOT_PASSWORD`；
