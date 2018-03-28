@@ -59,7 +59,7 @@ if [ "$MYSQL_DATABASE" != "" ]; then
         echo "GRANT ALL ON \`$i\`.* to '$MYSQL_USER'@'%' IDENTIFIED BY '$MYSQL_PASSWORD';" >> $tfile
         echo ">>>Import $i.sql."
         echo "USE $i;" >> $tfile
-		echo "source ./db-dump/${i}.sql;" >> $tfile
+	echo "source ./db-dump/${i}.sql;" >> $tfile
     done
 fi
 
