@@ -38,6 +38,8 @@ else
     sudo apt-get install mariadb-server -y
 fi
 
+MYSQL=`which mysql`
+
 # Use the new my.cnf
 sudo cp -f ./my.cnf /etc/mysql/
 
