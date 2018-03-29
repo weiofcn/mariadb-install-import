@@ -67,8 +67,8 @@ fi
 
 SQL=`cat $tfile`
 
-# Wait for mysql process
-sleep 3
+# Start time
+date
 
 # I found the source command is quite slow when I try to import a size of 140M sqlfile.
 ${MYSQL} -uroot -p${MYSQL_ROOT_PASSWORD} -e "${SQL}"
@@ -76,4 +76,7 @@ ${MYSQL} -uroot -p${MYSQL_ROOT_PASSWORD} -e "${SQL}"
 rm -rf $tfile
 
 service mysql restart
+
+# End time
+date
 echo "Done!"
